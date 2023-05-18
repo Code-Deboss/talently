@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Button from './Button'
+import Logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -48,18 +49,17 @@ const Navbar = () => {
   return (
     <>
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav className={navbar ? "flex fixed top-0 left-0 right-0 bg-white shadow-md items-center justify-between p-3 lg:px-10" : "flex fixed top-0 left-0 right-0 bg-transparent items-center justify-between p-3 lg:px-10"} aria-label="Global">
+        <nav className={navbar ? "flex items-center fixed top-0 left-0 right-0 shadow-md justify-between lg:py-3 bg-white p-6 lg:px-24" : "flex top-0 left-0 right-0 items-center justify-between p-6 lg:px-24"} aria-label="Global">
           <div className="flex lg:flex-1">
             <Link to={'/'} className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Talently Logo</span>
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                src={Logo}
+                width={'100%'}
+                alt="talently logo"
               />
             </Link>
           </div>
-
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -70,20 +70,26 @@ const Navbar = () => {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-8">
             {navbarData.map((item) => (
-              <Link key={item.title} to={item.path} className={navbar ? "text-md text-gray-700 font-normal hover:text-sky-600" : "text-md text-white font-normal hover:text-sky-600"}>
+              <Link key={item.title} to={item.path} className="text-sm font-semibold py-2 hover:shadow-sm px-5 hover:text-indigo-500 hover:bg-gray-50 duration-700 rounded-md leading-6 text-gray-900">
                 {item.title}
               </Link>
             ))}
           </div>
-          <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
-            <Link to={'/login'} className="text-sm font-semibold leading-6">
-              <Button buttonColor={'bg-sky-600'} buttonRadius={'rounded-lg'} buttonText={'Log In'} borderStyle={'border-2 border-sky-600'} buttonTextColor={'text-white'} />
+          <div className="hidden lg:flex gap-3 lg:flex-1 lg:justify-end">
+            <Link to={'/feed'} className='no-underline'>
+              <Button
+                buttonClass={'py-3 px-5 rounded-md bg-transparent border border-indigo-500 text-indigo-500 font-normal'}
+                buttonText={'Go to feed'}
+              />
             </Link>
 
-            <Link to={'/signup'} className="text-sm font-semibold leading-6">
-              <Button buttonColor={'bg-transparent hover:bg-sky-100 duration-700 eas-in'} buttonTextColor={'text-sky-600'} borderStyle={'border-sky-600 border-2'} buttonRadius={'rounded-lg'} buttonText={'Sign Up'} />
+            <Link to={'/login'} className='no-underline'>
+              <Button
+                buttonClass={'py-3 px-5 hover:bg-indigo-700 hover:border-indigo-700 duration-700 border border-indigo-500 rounded-md bg-indigo-500 font-normal text-white'}
+                buttonText={'Go Started'}
+              />
             </Link>
           </div>
         </nav>
@@ -92,11 +98,11 @@ const Navbar = () => {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link to={'/'} className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Talently Logo</span>
                 <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
+                  width={'100%'}
+                  src={Logo}
+                  alt="talently logo"
                 />
               </Link>
               <button
@@ -114,7 +120,7 @@ const Navbar = () => {
                   {navbarData.map((item) => (
                     <Link
                       key={item.title}
-                      to={item.path}
+                      href={item.path}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.title}
@@ -123,10 +129,17 @@ const Navbar = () => {
                 </div>
                 <div className="py-6">
                   <Link
+                    to={'/feed'}
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Got to feed
+                  </Link>
+
+                  <Link
                     to={'/login'}
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Log in
+                    Get Started
                   </Link>
                 </div>
               </div>

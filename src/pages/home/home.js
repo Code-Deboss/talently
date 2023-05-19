@@ -5,6 +5,7 @@ import AboutShort from './components/aboutShort'
 import Features from './components/features'
 import Reviews from './components/reviews'
 import CallToAction from './components/calltoaction'
+// import Footer from '../../components/footer'
 
 const home = () => {
   return (
@@ -15,6 +16,7 @@ const home = () => {
       <Features />
       <Reviews />
       <CallToAction />
+      {/* <Footer /> */}
     </>
   )
 }

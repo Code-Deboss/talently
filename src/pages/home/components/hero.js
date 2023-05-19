@@ -37,7 +37,7 @@ const Hero = () => {
                   <Button 
                     buttonClass={'py-3 px-5 hover:bg-indigo-700 hover:border-indigo-700 duration-700 border border-indigo-500 rounded-md bg-indigo-500 font-normal text-white'}
 
-                    buttonText={'Get Strated'}
+                    buttonText={'Get Started'}
                   />
                 </Link>
                 <Link to={'/about'}>

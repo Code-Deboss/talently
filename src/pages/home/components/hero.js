@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
       <section className='hero'>
-        <div className="relative isolate px-6 lg:px-24">
+        <div className="relative isolate py-6 px-6 lg:px-24">
           <div
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             aria-hidden="true"
@@ -25,7 +25,7 @@ const Hero = () => {
           <div className='flex lg:flex-row hero_container items-center'>
             <div className='sm:basis-0 lg:basis-1/2'>
               <h1 className="text-2xl lg:text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                Discover the world's best Talents conveniently
+                Talently, getting your uniquness to the world.
               </h1>
 
               <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -42,7 +42,7 @@ const Hero = () => {
                 </Link>
                 <Link to={'/about'}>
                   <Button 
-                    buttonClass={'py-3 px-5 hover:bg-gray-500 hover:border-gray-500 duration-700 border border-gray-300 rounded-md bg-gray-300 font-normal hover:text-white text-gray-900'}
+                    buttonClass={'py-3 px-5 hover:bg-gray-400 hover:border-gray-400 duration-700 border border-gray-300 rounded-md bg-gray-300 font-normal hover:text-black text-gray-900'}
                     buttonText={`Learn more`}
                   />
                 </Link>

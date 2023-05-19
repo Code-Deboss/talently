@@ -49,13 +49,13 @@ const Navbar = () => {
   return (
     <>
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav className={navbar ? "flex items-center fixed top-0 left-0 right-0 shadow-md justify-between lg:py-3 bg-white p-6 lg:px-24" : "flex top-0 left-0 right-0 items-center justify-between p-6 lg:px-24"} aria-label="Global">
+        <nav className={navbar ? "flex items-center fixed top-0 left-0 right-0 shadow-md justify-between lg:py-2 p-5 sm:py-2 bg-white lg:px-24" : "flex top-0 left-0 right-0 items-center justify-between p-5 lg:px-24"} aria-label="Global">
           <div className="flex lg:flex-1">
             <Link to={'/'} className="-m-1.5 p-1.5">
               <span className="sr-only">Talently Logo</span>
               <img
                 src={Logo}
-                width={'100%'}
+                width={'80%'}
                 alt="talently logo"
               />
             </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
             <Link to={'/login'} className='no-underline'>
               <Button
                 buttonClass={'py-3 px-5 hover:bg-indigo-700 hover:border-indigo-700 duration-700 border border-indigo-500 rounded-md bg-indigo-500 font-normal text-white'}
-                buttonText={'Go Started'}
+                buttonText={'Get Started'}
               />
             </Link>
           </div>

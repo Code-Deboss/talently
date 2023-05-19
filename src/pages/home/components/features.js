@@ -9,10 +9,10 @@ const Features = () => {
       icon: <BsIcons.BsPeople /> ,
     },
     {
-      name: 'SSL certificates',
+      name: 'Content Creation',
       description:
         'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-      icon: <BsIcons.BsLock />,
+      icon: <BsIcons.BsPlayBtn />,
     },
     {
       name: 'Scout Attraction',

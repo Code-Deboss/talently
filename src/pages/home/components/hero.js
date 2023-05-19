@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.css'
 import { Link } from 'react-router-dom'
 import Button from '../../../components/Button'
 import Hero2 from '../assets/hero2.png'
@@ -7,10 +6,10 @@ import Hero2 from '../assets/hero2.png'
 const Hero = () => {
   return (
     <>
-      <section className='hero'>
-        <div className="relative isolate py-6 px-6 lg:px-24">
+      <section className='h-screen overflow-hidden'>
+        <div className="relative isolate">
           <div
-            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl -top-80"
             aria-hidden="true"
           >
             <div
@@ -22,13 +21,13 @@ const Hero = () => {
             />
           </div>
 
-          <div className='flex lg:flex-row hero_container items-center'>
-            <div className='sm:basis-0 lg:basis-1/2'>
-              <h1 className="text-2xl lg:text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <div className='flex md:py-44 mx-auto max-w-7xl px-6 lg:px-8 md:flex-col lg:flex-row xl:flex-row h-screen items-center'>
+            <div className='md:basis-0 lg:basis-1/2 xl:basis-1/2'>
+              <h1 className="text-2xl md:text-5xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-gray-900">
                 Talently, getting your uniquness to the world.
               </h1>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 lg:text-lg xl:leading-8 lg:leading-8 md:leading-7 md:text-lg text-sm xl:text-lg leading-5 text-gray-600">
                 At Talently, we connect promising new talent to trustworthy scouts and the right talent managers. Talent Discovery is as easy and seamless as ordering a cab.
               </p>
 
@@ -49,7 +48,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className='lg:basis-1/2 sm:block hidden sm:basis-0'>
+            <div className='xl:basis-1/2 lg:basis-1/2 md:hidden lg:block hidden xl:block md:basis-0'>
               <img src={Hero2} width={'70%'} className='mx-auto mt-3' alt={'talantly hero pic'} />
             </div>
           </div>

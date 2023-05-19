@@ -1,0 +1,8 @@
+.about_short {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)), url('../assets/abtbg.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}

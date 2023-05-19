@@ -1,6 +1,6 @@
 import React from 'react'
-import BackgroundImage from '../assets/abtbg.jpg'
 import { Link } from 'react-router-dom'
+import './aboutshort.css'
 
 const AboutShort = () => {
 
@@ -20,12 +20,7 @@ const AboutShort = () => {
   return (
     <>
       <section>
-        <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-          <img
-            src={BackgroundImage}
-            alt="about talently"
-            className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-          />
+        <div className="relative about_short isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
           <div
             className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
             aria-hidden="true"

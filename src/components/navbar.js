@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <>
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav className={navbar ? "flex items-center fixed top-0 left-0 right-0 shadow-md justify-between lg:py-2 p-5 sm:py-2 bg-white lg:px-24" : "flex top-0 left-0 right-0 items-center justify-between p-5 lg:px-24"} aria-label="Global">
+        <nav className={navbar ? "flex items-center fixed top-0 left-0 right-0 shadow-md justify-between lg:py-2 p-5 sm:py-2 bg-white lg:px-16" : "flex top-0 left-0 right-0 items-center justify-between p-5 lg:px-16"} aria-label="Global">
           <div className="flex lg:flex-1">
             <Link to={'/'} className="-m-1.5 p-1.5">
               <span className="sr-only">Talently Logo</span>
@@ -70,24 +70,24 @@ const Navbar = () => {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-8">
+          <div className="hidden lg:flex xl:gap-x-8">
             {navbarData.map((item) => (
-              <Link key={item.title} to={item.path} className="text-sm font-semibold py-2 hover:shadow-sm px-5 hover:text-indigo-500 hover:bg-gray-50 duration-700 rounded-md leading-6 text-gray-900">
+              <Link key={item.title} to={item.path} className="text-sm font-semibold py-2 hover:shadow-sm px-5 hover:text-indigo-500 hover:bg-gray-100 duration-700 rounded-md leading-6 text-gray-900">
                 {item.title}
               </Link>
             ))}
           </div>
-          <div className="hidden lg:flex gap-3 lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:gap-3 gap-0 lg:flex-1 lg:justify-end">
             <Link to={'/feed'} className='no-underline'>
               <Button
-                buttonClass={'py-3 px-5 rounded-md bg-transparent border border-indigo-500 text-indigo-500 font-normal'}
+                buttonClass={'xl:py-3 px-3 py-2 xl:px-5 rounded-md bg-transparent border border-indigo-500 text-indigo-500 text-base font-normal'}
                 buttonText={'Go to feed'}
               />
             </Link>
 
             <Link to={'/login'} className='no-underline'>
               <Button
-                buttonClass={'py-3 px-5 hover:bg-indigo-700 hover:border-indigo-700 duration-700 border border-indigo-500 rounded-md bg-indigo-500 font-normal text-white'}
+                buttonClass={'xl:py-3 px-5 xl:py-3 px-3 py-2 xl:px-5 text-base hover:bg-indigo-700 hover:border-indigo-700 duration-700 border border-indigo-500 rounded-md bg-indigo-500 font-normal text-white'}
                 buttonText={'Get Started'}
               />
             </Link>

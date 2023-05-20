@@ -22,7 +22,7 @@ const Navbar = () => {
   useEffect(() => {
     updateNavbar();
     window.addEventListener('scroll', updateNavbar);
-  })
+  }, []);
   
   const navbarData = [
     {

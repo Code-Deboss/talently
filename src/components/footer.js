@@ -138,7 +138,7 @@ const footer = () => {
           <div className='h-full basis-1/2 flex items-center'>
             <div>
               <div>
-                <img src={LogoImage} width={'35%'} alt='talently logo' />
+                <img src={LogoImage} width={'45%'} alt='talently logo' />
               </div>
 
               <div className='mt-6'>

@@ -21,13 +21,13 @@ const Hero = () => {
             />
           </div>
 
-          <div className='flex md:py-44 mx-auto max-w-7xl px-6 lg:px-8 md:flex-col lg:flex-row xl:flex-row h-screen items-center'>
+          <div className='flex mx-auto max-w-7xl px-6 lg:px-8 md:flex-col lg:flex-row xl:flex-row h-screen items-center md:justify-center'>
             <div className='md:basis-0 lg:basis-1/2 xl:basis-1/2'>
-              <h1 className="text-2xl md:text-5xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-gray-900">
+              <h1 className="text-2xl xl:text-5xl lg:text-5xl font-bold tracking-tight text-gray-900 md:text-5xl">
                 Talently, getting your uniquness to the world.
               </h1>
 
-              <p className="mt-6 lg:text-lg xl:leading-8 lg:leading-8 md:leading-7 md:text-lg text-sm xl:text-lg leading-5 text-gray-600">
+              <p className="mt-6 xl:text-lg lg:text-lg md:text-lg text-base xl:leading-8 lg:leading-8 md:leading-8 leading-6 text-gray-600">
                 At Talently, we connect promising new talent to trustworthy scouts and the right talent managers. Talent Discovery is as easy and seamless as ordering a cab.
               </p>
 

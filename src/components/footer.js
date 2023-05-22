@@ -133,7 +133,7 @@ const footer = () => {
 
   return (
     <>
-      <footer className='pt-24 pb-10 px-20 bg-gray-100 text-gray-900'>
+      <footer className='pt-24 pb-10 px-6 xl:px-20 lg:px-20 md:px-10 bg-gray-100 text-gray-900'>
         <div className='xl:flex xl:flex-row border-b pb-24 gap-2'>
           <div className='h-full basis-1/2 flex items-center'>
             <div>
@@ -161,8 +161,8 @@ const footer = () => {
             </div>
           </div>
 
-          <div className='basis-1/2'>
-            <div className='grid grid-cols-4 gap-5'>
+          <div className='basis-1/2 mt-8 xl:mt-0'>
+            <div className='grid grid-cols-3 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 gap-5'>
               <div>
                 <h5 className='text-base font-semibold'>
                   Solutions

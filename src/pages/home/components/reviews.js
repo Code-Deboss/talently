@@ -9,7 +9,7 @@ const Reviews = () => {
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <img className="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" />
           <figure className="mt-10">
-            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+            <blockquote className="text-center xl:text-xl lg:text-xl md:text-xl text-lg font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
               <p>
                 “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
                 molestiae. Numquam corrupti in laborum sed rerum et corporis.”

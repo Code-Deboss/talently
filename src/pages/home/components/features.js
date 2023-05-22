@@ -37,7 +37,7 @@ const Features = () => {
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Core features of talently
             </p>
-            <p className="mt-3 text-lg leading-8 text-gray-600">
+            <p className="mt-3 xl:text-lg lg:text-lg md:text-lg text-base xl:leading-8 lg:leading-8 md:leading-8 leading-6 text-gray-600">
               Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
               pulvinar et feugiat blandit at. In mi viverra elit nunc.
             </p>

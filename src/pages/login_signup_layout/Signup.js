@@ -28,22 +28,34 @@ const Signup = () => {
             </Link>
        </div>
       </header>
-      <main className='h-screen w-full flex items-center flex-wrap justify-items-center flex-row bg-blue-300'>
+      <main className='h-screen w-full flex items-center flex-wrap justify-items-center flex-row '>
         
         <div className='h-screen w-[45%] flex items-center justify-items-center overflow-hidden img-container'>
           <img src={ImgII} className='w-full h-full object-cover object-center' alt=''/>
         </div>
-        <div className='flex items-center justify-items-center h-screen w-[55%] form ' >
-          <form className='h-[740px] w-[580px] bg-gray-100 ml-[70px] mt-[5px] flex items-start justify-items-between flex-col '>
+        <div className='flex items-center justify-items-center h-screen w-[55%] form' >
+          <form className='h-[740px]  w-[580px] flex items-start ml-[79px] justify-items-between flex-col '>
             <div>
-              <h1 className='text-3xl m-0 '>Get started</h1>
-              <p>Create your Account</p>
+              <h1 className='text-3xl m-0 font-medium'>Get started</h1>
+              <p className='text-sm w-auto text-slate-400'>Create your Account</p>
             </div>
-            <div>
-              <input />
-              <input />
-              <input />
-              <input />
+            <div className=' h-[50rem] w-full flex items-center justify-items-center flex-col bg-red-400'>
+              <input className='w-full bg-[#F8F7FD] h-16 text-sm rounded-xl border-2px-blue-700  p-7 '
+                type='text'
+                placeholder='Fullname'
+              />
+              <input className='w-full bg-[#F8F7FD] h-16 text-sm rounded-xl  border-2px-blue-700  p-7 '
+                type='email' 
+                placeholder='Email address'
+              />
+              <input className='w-full bg-[#F8F7FD] h-16 text-sm rounded-xl  border-2px-blue-700 p-7 '
+                type='password'
+                placeholder='Password'
+               />
+              <input className='w-full bg-[#F8F7FD] h-16 text-sm rounded-xl  border-2px-blue-700  p-7 '
+                type='password'
+                placeholder='Confirm password'
+              />
             </div>
             <div>
               <p>Select User Type</p>

@@ -1,0 +1,11 @@
+@media (max-width: 900px) {
+    .img-container{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

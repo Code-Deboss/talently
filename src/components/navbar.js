@@ -85,7 +85,7 @@ const Navbar = () => {
               />
             </Link>
 
-            <Link to={'/login'} className='no-underline'>
+            <Link to={'/signup'} className='no-underline'>
               <Button
                 buttonClass={'xl:py-3 px-5 xl:py-3 px-3 py-2 xl:px-5 text-base hover:bg-indigo-700 hover:border-indigo-700 duration-700 border border-indigo-500 rounded-md bg-indigo-500 font-normal text-white'}
                 buttonText={'Get Started'}

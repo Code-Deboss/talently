@@ -1,7 +1,7 @@
 import React from 'react'
 import './signup.css'
 import { Link } from 'react-router-dom'
-import Img from './logo.png'
+import Img from './assets/logo.png'
 import Button from './Button/Button'
 import ImgII from "./assets/premium_photo-1683639549573-bcc2db33dc15.avif"
 
@@ -39,7 +39,7 @@ const Signup = () => {
               <h1 className='text-3xl m-0 font-medium'>Get started</h1>
               <p className='text-sm w-auto text-slate-400'>Create your Account</p>
             </div>
-            <div className=' h-[50rem] w-full flex items-center justify-items-center flex-col bg-red-400'>
+            <div className=' h-[50rem] w-full bg-green-400'>
               <input className='w-full bg-[#F8F7FD] h-16 text-sm rounded-xl border-2px-blue-700  p-7 '
                 type='text'
                 placeholder='Fullname'
